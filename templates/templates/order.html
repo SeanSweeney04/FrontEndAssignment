@@ -1,0 +1,48 @@
+{% block title %} Enter your details{% endblock %}
+{% block content %}
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>User Signup</title>
+
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body{
+        background-color: #A52A2A;
+        
+    }
+
+    container{
+        background-color: #fff;
+        padding:20px;
+        border-radius: 10px;
+        box-shadow: 0, 4px, 8px, rgba(0, 0, 0, 0.1);
+    }
+    
+</style>
+</head>
+<body>
+
+    <style>
+        form{
+            text-align: center;
+        }
+        body{
+            color: #fff;
+
+            background-image: url("https://images5.alphacoders.com/107/1078986.jpg");
+            background-size: cover;
+        }
+        
+    </style>
+<div class = "container-mt-5">
+<form action = "" method = "post">
+    {% csrf_token %}
+    {{form.as_p }}
+    <input type="submit" class="btn btn-primary" value=Submit>
+</form>
+{% endblock %}
+ 

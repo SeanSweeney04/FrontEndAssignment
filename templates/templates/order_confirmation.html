@@ -1,0 +1,35 @@
+
+<html>
+    <style>
+        body{
+            color: #fff;
+
+            background-image: url("https://images5.alphacoders.com/107/1078986.jpg");
+            background-size: cover;
+        }
+        </style>
+        <style>
+        
+        </style>
+    <h1>Order recieved</h1>
+    <h2>Size: {{pizza.size}}</h2>
+    <h2>Crust: {{pizza.crust_type}}</h2>
+    <h2>Sauce: {{pizza.sauce}}</h2>
+    <h2>Cheese: {{pizza.cheese}}</h2>
+    <h2>Toppings:
+        {% if pizza.pepperoni %} pepperoni, {% endif %}
+        {% if pizza.chicken %} chicken, {% endif %}
+        {% if pizza.ham %} ham, {% endif %}
+        {% if pizza.peppers %} peppers {% endif %}
+        {% if pizza.mushrooms %} mushrooms {% endif %}
+        {% if pizza.onions %} onions, {% endif %}
+        {% if pizza.pinapple %} pinapple {% endif %}</h2>
+
+
+
+    <a href = "{% url 'create' %}"> Create new</a>
+
+
+
+
+</html>
