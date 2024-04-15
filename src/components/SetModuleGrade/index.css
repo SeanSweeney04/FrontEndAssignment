@@ -1,0 +1,30 @@
+
+/* Custom CSS for Bootstrap form */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-check-label {
+  font-weight: normal;
+}
+
+.btn-primary {
+  background-color: blue;
+  margin-top: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
